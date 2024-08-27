@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Estoque</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div id="authContainer" class="container mx-auto p-4">
+        <!-- Formulário de Login -->
+        <div id="loginForm" class="auth-form">
+            <h2 class="text-2xl font-bold mb-4">Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" class="w-full p-2 mb-4 border rounded">
+            <input type="password" id="loginPassword" placeholder="Senha" class="w-full p-2 mb-4 border rounded">
+            <button id="loginButton" class="bg-blue-500 text-white px-4 py-2 rounded">Entrar</button>
+            <p class="mt-4">Não tem uma conta? <a href="#" id="showRegister" class="text-blue-500">Registrar</a></p>
+        </div>
+
+        <!-- Formulário de Registro -->
+        <div id="registerForm" class="auth-form" style="display: none;">
+            <h2 class="text-2xl font-bold mb-4">Registrar</h2>
+            <input type="email" id="registerEmail" placeholder="Email" class="w-full p-2 mb-4 border rounded">
+            <input type="password" id="registerPassword" placeholder="Senha" class="w-full p-2 mb-4 border rounded">
+            <button id="registerButton" class="bg-green-500 text-white px-4 py-2 rounded">Registrar</button>
+            <p class="mt-4">Já tem uma conta? <a href="#" id="showLogin" class="text-blue-500">Entrar</a></p>
+        </div>
+    </div>
+
+    <div id="stockContainer" class="container mx-auto p-4" style="display: none;">
+        <button id="logoutButton" class="bg-red-500 text-white px-4 py-2 rounded mb-4">Sair</button>
+        <div id="app-container"></div>
+    </div>
+
+    <!-- Scripts dos Componentes e Firebase -->
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
