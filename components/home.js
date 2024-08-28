@@ -2,7 +2,7 @@ export function renderHome(navigateTo) {
   const appContainer = document.getElementById('app-container');
 
   appContainer.innerHTML = `
-    <div class="flex justify-center gap-8 mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 px-4">
       <div class="cursor-pointer text-center" id="viewStock">
         <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -8,20 +8,22 @@ export function renderTable(navigateTo) {
         Voltar
       </button>
     </div>
-    <table class="min-w-full bg-white">
-      <thead>
-        <tr>
-          <th class="py-2 px-4 border-b">Time</th>
-          <th class="py-2 px-4 border-b">Variação</th>
-          <th class="py-2 px-4 border-b">P</th>
-          <th class="py-2 px-4 border-b">M</th>
-          <th class="py-2 px-4 border-b">G</th>
-          <th class="py-2 px-4 border-b">GG</th>
-          <th class="py-2 px-4 border-b">Ações</th> <!-- Coluna de Ações -->
-        </tr>
-      </thead>
-      <tbody id="stockTable"></tbody>
-    </table>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white">
+        <thead>
+          <tr>
+            <th class="py-2 px-2 sm:px-4 border-b">Time</th>
+            <th class="py-2 px-2 sm:px-4 border-b">Variação</th>
+            <th class="py-2 px-2 sm:px-4 border-b">P</th>
+            <th class="py-2 px-2 sm:px-4 border-b">M</th>
+            <th class="py-2 px-2 sm:px-4 border-b">G</th>
+            <th class="py-2 px-2 sm:px-4 border-b">GG</th>
+            <th class="py-2 px-2 sm:px-4 border-b">Ações</th> <!-- Coluna de Ações -->
+          </tr>
+        </thead>
+        <tbody id="stockTable"></tbody>
+      </table>
+    </div>
   `;
 
   // Evento do botão "Voltar"
